@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * @autor Carlos Augusto Rehem Teles de Almeida - 3C (Informática)
+ * @autor Carlos S. Rehem
  */
 
 public class Main{
@@ -12,7 +12,7 @@ public class Main{
         Scanner teclado = new Scanner(System.in);
         
         Controlador controle = new Controlador(pintor, d20, teclado);
-        
+        controle.rodarJogo();
     //===
   }
 }
