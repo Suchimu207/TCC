@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conhecendo o Cumbe</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+	
+	<!--
+	<img src="{{ url_for('static', filename='pizza.jfif') }}">
+	
+	<div class="grupoCampo">
+				<label for="sugestao">Tem alguma sugestão de melhoria?</label>
+                <textarea id="sugestao" name="sugestao" rows="4"></textarea>
+    </div>
+	
+	<div class="grupoCampo">
+                <label>Quais recursos você utiliza com frequência? (Selecione todos que aplicar)</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="recurso1" name="recursos" value="chat">
+                        <label for="recurso1">Chat online</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="recurso2" name="recursos" value="app">
+                        <label for="recurso2">Aplicativo móvel</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="recurso3" name="recursos" value="forum">
+                        <label for="recurso3">Fórum de discussão</label>
+                    </div>
+                </div>
+            </div>
+			
+	<div class="grupoCampo">
+                <label for="satisfacao">Como você avalia nossa plataforma? <span class="required">*</span></label>
+                <select id="satisfacao" name="satisfacao" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="excelente">Excelente</option>
+                    <option value="bom">Bom</option>
+                    <option value="regular">Regular</option>
+                    <option value="ruim">Ruim</option>
+                </select>
+    </div>
+	-->
+	
+</head>
+<body>
+    <div class="grupoContainer">
+        <h1>Conhecendo o Cumbe</h1>
+		<h3>Insira suas informações...</h3>
+        <form action="/perguntas" method="POST">
+            <div class="grupoCampo">
+                <label for="nome">Nome <span class="required">*</span></label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="grupoCampo">
+                <label>Qual é a sua faixa etária? <span class="required">*</span></label>
+                <div class="radio-group">
+					<div class="radio-option">
+                        <input type="radio" id="idade1" name="idade" value="12-" required>
+                        <label for="idade1">Menos de 12 anos</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="idade2" name="idade" value="13-20" required>
+                        <label for="idade1">13-20 anos</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="idade3" name="idade" value="21-35">
+                        <label for="idade2">21-35 anos</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="idade4" name="idade" value="40+">
+                        <label for="idade4">Acima de 40 anos</label>
+                    </div>
+                </div>
+            </div>
+			
+                <button type="submit">Ir para perguntas</button>
+        </form>
+    </div>
+</body>
+</html>

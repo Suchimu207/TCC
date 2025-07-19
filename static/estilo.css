@@ -1,0 +1,139 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h3{
+	color: #3f3f54;
+}
+
+h1{
+    color: #3f3f54;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.2em;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #3B92CF;
+}
+
+.grupoContainer{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.grupoCampo{
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+	color: #3f3f54;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+	font-size: 1.2em;
+}
+
+.required{
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+
+.radio-group, .checkbox-group {
+    margin: 15px 0;
+}
+
+.radio-option, .checkbox-option {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.radio-option input[type="radio"],
+.checkbox-option input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+button{
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover{
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dispositivos móveis */
+@media (max-width: 600px){
+    body {
+        padding: 15px;
+    }
+    
+    .form-container{
+        padding: 20px;
+    }
+    
+    h1{
+        font-size: 1.8em;
+    }
+}
